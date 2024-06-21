@@ -1,0 +1,51 @@
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(var(--card-size) * 3);
+}
+
+.opacity{
+  opacity: .5;
+}
+
+.currentPlayer{
+  color: white;
+  align-self: flex-start;
+}
+
+.reset{
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: -65px;
+  background-color: #ec3636;
+  color: white;
+}
+
+@media (max-width : 660px){
+  .reset{
+    font-size: initial;
+    padding: 1rem .75rem;
+    border-radius: 6px;
+    bottom: -55px;
+  }
+}
+
+@media (max-width: 470px){
+  .currentPlayer{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .reset{
+    padding: .75rem .5rem;
+    border-radius: 4px;
+  }
+}
